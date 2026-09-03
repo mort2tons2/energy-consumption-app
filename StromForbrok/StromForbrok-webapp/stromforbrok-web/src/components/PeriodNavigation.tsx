@@ -11,7 +11,7 @@ import { periodLabel } from "../features/period/periodMath";
 import { reset, setResolution, shift } from "../features/period/periodSlice";
 import type { PeriodResolution } from "../types/types";
 
-export function PeriodNav() {
+export function PeriodNavigation() {
   const dispatch = useAppDispatch();
   const { anchorDate, resolution } = useAppSelector((s) => s.period);
 
@@ -38,18 +38,11 @@ export function PeriodNav() {
       </ToggleButtonGroup>
 
       <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-        <IconButton
-          onClick={() => dispatch(shift(-1))}
-          aria-label="previous period"
-        >
-          {"‹"}
-        </IconButton>
-        <Typography variant="h6" sx={{ minWidth: 220, textAlign: "center" }}>
+        <IconButton onClick={() => dispatch(shift(-1))}>{"‹"}</IconButton>
+        <Typography variant="h6" sx={{ minWidth: 150, textAlign: "center" }}>
           {periodLabel(anchorDate, resolution)}
         </Typography>
-        <IconButton onClick={() => dispatch(shift(1))} aria-label="next period">
-          {"›"}
-        </IconButton>
+        <IconButton onClick={() => dispatch(shift(1))}>{"›"}</IconButton>
       </Stack>
 
       <Button size="small" onClick={() => dispatch(reset())}>

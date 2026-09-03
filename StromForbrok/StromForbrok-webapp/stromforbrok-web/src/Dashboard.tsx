@@ -1,6 +1,6 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import { EnergyConsumptionChart } from "./components/EnergyConsumptionChart";
-import { PeriodNav } from "./components/PeriodNav";
+import { PeriodNavigation } from "./components/PeriodNavigation";
 import { SyncButton } from "./components/SyncButton";
 import { WeatherChart } from "./components/WeatherChart";
 
@@ -9,7 +9,7 @@ export function Dashboard() {
     <Container maxWidth="lg" sx={{ py: 3 }}>
       <Stack spacing={3}>
         <Typography variant="h4">Strømforbruk</Typography>
-        <PeriodNav />
+        <PeriodNavigation />
         <SyncButton />
         <Box
           sx={{
