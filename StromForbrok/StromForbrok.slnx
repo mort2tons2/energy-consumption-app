@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="StromForbrok-webapp/stromforbrok-web/stromforbrok-web.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="StromForbrok-webapp/StromForbrok.Api/StromForbrok.Api.csproj" />
+  <Project Path="StromForbrok.AppHost/StromForbrok.AppHost.csproj" />
+  <Project Path="StromForbrok.ServiceDefaults/StromForbrok.ServiceDefaults.csproj" />
+</Solution>

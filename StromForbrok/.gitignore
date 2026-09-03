@@ -1,0 +1,8 @@
+# Local database files (created at runtime by the SQLite / local mode)
+.data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
